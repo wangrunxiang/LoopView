@@ -84,8 +84,4 @@ public class LoopView extends RelativeLayout {
         mViewPager.getAdapter().notifyDataSetChanged();
         loopHandler.start(mContext, mViewPager, mViewPager.getAdapter().getCount());
     }
-
-    public interface LoopViewOnClickListener {
-        void onClick(int position, View view);
-    }
 }

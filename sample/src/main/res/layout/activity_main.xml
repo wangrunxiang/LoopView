@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.wangrunxiang.loopview.LoopView
+    <com.wangrunxiang.loopview.ImageLoopView
         android:id="@+id/loop_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
