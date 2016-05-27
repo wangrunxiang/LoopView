@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoopView">
+        <attr name="circlePointSize" format="dimension"/>
+        <attr name="circlePointSelectedColor" format="color"/>
+        <attr name="circlePointColor" format="color"/>
+        <attr name="circlePointStrokeColor" format="color"/>
+        <attr name="circlePointRadius" format="dimension"/>
+        <attr name="circlePointRange" format="dimension"/>
+    </declare-styleable>
+</resources>
