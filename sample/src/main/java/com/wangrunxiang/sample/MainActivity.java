@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ImageLoopView loopView = (ImageLoopView) findViewById(R.id.loop_view);
         if (loopView != null) {
-            loopView.setImageCount(3);
-            List<ImageView> imageViews = loopView.getImageViews();
+            List<ImageView> imageViews = loopView.getImageViews(3);
             for (int i=0; i<imageViews.size(); i++) {
                 if (i==0) {
                     imageViews.get(0).setBackgroundColor(0xff00ff00);
