@@ -7,5 +7,6 @@
         <attr name="circlePointStrokeColor" format="color"/>
         <attr name="circlePointRadius" format="dimension"/>
         <attr name="circlePointRange" format="dimension"/>
+        <attr name="circlePointMarginBottom" format="dimension"/>
     </declare-styleable>
 </resources>

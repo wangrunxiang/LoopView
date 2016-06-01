@@ -20,7 +20,7 @@ import java.util.List;
 public class LoopView extends RelativeLayout {
 
     private float mCirclePointRadius, mCirclePointRange;
-    private int mCirclePointColor, mCirclePointSelectedColor, mCirclePointStrokeColor;
+    private int mCirclePointColor, mCirclePointSelectedColor, mCirclePointStrokeColor, mCirclePointMarginBottom;
     private ViewPager mViewPager;
     private CirclePageIndicator mCirclePageIndicator;
     private Context mContext;
@@ -61,6 +61,7 @@ public class LoopView extends RelativeLayout {
         LayoutParams layoutParams = new LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(CENTER_HORIZONTAL, TRUE);
         layoutParams.addRule(ALIGN_PARENT_BOTTOM, TRUE);
+        layoutParams.setMargins(0, 0, 0, mCirclePointMarginBottom);
         mCirclePageIndicator.setLayoutParams(layoutParams);
         addView(mCirclePageIndicator);
         loopHandler = new LoopHandler();
@@ -76,6 +77,7 @@ public class LoopView extends RelativeLayout {
         mCirclePointStrokeColor = typedArray.getColor(R.styleable.LoopView_circlePointStrokeColor, Color.parseColor("#b2ffffff"));
         mCirclePointSelectedColor = typedArray.getColor(R.styleable.LoopView_circlePointSelectedColor, Color.parseColor("#b2ffff00"));
         mCirclePointRange = typedArray.getDimension(R.styleable.LoopView_circlePointRange, 30);
+        mCirclePointMarginBottom = (int) typedArray.getDimension(R.styleable.LoopView_circlePointMarginBottom, 10);
         typedArray.recycle();
     }
 
